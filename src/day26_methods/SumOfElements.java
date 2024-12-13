@@ -1,8 +1,8 @@
-package my_utilities;
+package day26_methods;
 
 import java.util.Arrays;
 
-public class ArrayUtil {
+public class SumOfElements {
 
     public static int minNumInArr (int [] arr){
         int min = 0;
@@ -25,6 +25,7 @@ public class ArrayUtil {
 
         return max;
     }
+
 
     /**
      * This method returns boolean whether given int arr contains the given num
@@ -81,6 +82,20 @@ public class ArrayUtil {
             }
         }
         return index;
+    }
+
+
+    /**
+     * This method return the total sum of all the numbers in given int array
+     * @param arr given int array
+     * @returns the total sum of all elements
+     */
+    public static int sum (int ... arr){ // {1, 3, 5, 23, 65, 76};
+        int total = 0;
+        for ( int each : arr) {
+            total += each;
+        }
+        return total;
     }
 
 }
