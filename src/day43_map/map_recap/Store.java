@@ -1,5 +1,6 @@
 package day43_map.map_recap;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -58,7 +59,7 @@ public class Store {
 
         // 8 - .values( ); --- >returns the Collection of Values in the map
         System.out.println( store.values() );
-        Collection <Double> valuesInStore = store.values(); // return Collection interface
+        Collection<Double> valuesInStore = store.values(); // return Collection interface
         System.out.println(valuesInStore);
 
 
